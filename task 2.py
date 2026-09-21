@@ -125,3 +125,39 @@ print("Original price:", Original_price)
 print("Discount percent:", discount_percent)
 print("final price:", Final_price)
 print("discount amount:", discount_amount)
+
+
+item_name = input("Enter product name: ")
+price = (float(input("Enter price per item: ")))
+quantity = (int(input("Enter quantity: ")))
+total_cost = price * quantity
+print("Total cost:", total_cost)
+# f -> formatted string method
+print(f"You purchased  {quantity}   units of  {item_name}")
+#string + int pana mudiyathu so convert to str
+#print("You purchased " + quantity + " units of " + item_name)
+print("You purchased " + str(quantity) + " units of " + item_name)
+print("Total payable: " + str(total_cost))
+print(f"Total payable: {total_cost} ")
+
+# String + int cannot be concatenated directly.
+# So, we use str() to convert the integer into a string.
+
+# f-string is a formatted string method.
+# It allows us to insert variables directly using {}.
+
+#Incorrect code:
+"""age = input("Enter age: ")
+ citizen = input("Are you an Indian citizen? (yes/no)")
+if age > "18" and citizen = "yes":
+ print("Eligible to vote")
+ else:
+ print("Not eligible")"""
+
+age = input("enter age: ")
+age = int(age)
+citizen = input("Are you an Indian citizen? (yes/no)")
+if age >= 18 and citizen == "yes":
+    print("Eligible to vote")
+else:
+    print("Not eligible")
