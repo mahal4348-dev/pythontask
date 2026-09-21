@@ -68,4 +68,60 @@ print('pascalcase:', DataEngineeringBatch)
 print('camelCase:',dataEngineeringBatch)
 print('snake_case:',data_engineering_batch)
 
+# Type identification & Casting
+#input()
+age = input("Enter the employee's age:")
+#Check the Type
+print(type(age))
+#Converts it to int
+age = int(age)
+retirement_age = 60
+#Calculate years pending
+years_pending = retirement_age - age
+print(f"You will retire in {years_pending} years at Inceptez Technologies.")
 
+#Debug
+#salary = '50000'
+#bonus = 10000
+#print('Total Salary in Inceptez:', salary + bonus)
+#correct the code
+salary = '50000'
+bonus = 10000
+#convert to int
+salary = int(salary)
+print(type(salary))
+print('Total Salary in Inceptez:', salary + bonus)
+
+#Data types and casting
+employee_name = input("Enter employee name:")
+base_salary = float(input("Enter Base Salary:"))
+hra_percent =int(input("Enter hra percent:"))
+bonus_amount = float(input("Enter bonus amount:"))
+#Calculate
+HRA = base_salary * (hra_percent / 100)
+Total_Salary = base_salary + HRA + bonus_amount
+print("Total_Salary:", Total_Salary)
+print(type(Total_Salary))
+
+#Operators
+#Internet Data Usage Calculator
+data_limit =  float(input("Total monthly data limit in GB:"))
+Data_used = float(input("data used so far in GB:"))
+#Calculate using arithmetic operators
+Remaining_data = data_limit - Data_used
+Usage_percentage = (Data_used/ data_limit) * 100
+print("Remaining_data:", Remaining_data)
+print("Usage_percentage:", round(Usage_percentage,2),"%")
+if Usage_percentage >= 80:
+    print( "Warning: High usage, consider upgrading your plan.")
+
+#Shopping Discount Calculation
+Original_price = (float(input("Enter Original price:")))
+discount_percent = (int(input("Enter Discount percent:")))
+discount_amount = (Original_price * discount_percent) / 100
+Final_price = Original_price - discount_amount
+
+print("Original price:", Original_price)
+print("Discount percent:", discount_percent)
+print("final price:", Final_price)
+print("discount amount:", discount_amount)
